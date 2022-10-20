@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Mukta&family=Overpass:wght@400;700&family=Roboto&family=Space+Grotesk:wght@500&display=swap");
+/* Variables*/
+:root {
+  --white: hsl(0, 0%, 100%);
+  --grey-violet-light: hsl(270, 3%, 87%);
+  --grey-violet-dark: hsl(279, 6%, 55%);
+  --dark-violet: hsl(278, 68%, 11%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: auto;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+  display: flex;
+}
+
+.bg-img {
+  position: absolute;
+  width: 33%;
+  height: 100%;
+}
+.bg-img-small {
+  display: none;
+}
+
+#container {
+  max-width: 1440px;
+  width: 100%;
+  /* border: 1px solid #c3c3c3; */
+  padding: 20px;
+  display: flex;
+}
+#card-front {
+  position: absolute;
+  width: fit-content;
+  left: 15%;
+  top: 20%;
+}
+#logo {
+  position: absolute;
+  top: 16%;
+  left: 12%;
+  color: white;
+}
+.number {
+  bottom: 7%;
+  left: 12%;
+  color: white;
+}
+.name {
+  position: relative;
+  text-align: start;
+  bottom: 7%;
+}
+
+.month-year {
+  position: absolute;
+align-items: flex-end;
+  margin-bottom: 5px;
+}
+.card-back {
+  position: absolute;
+  width: fit-content;
+  left: 20%;
+  top: 50%;
+}
+.cvc {
+  position: absolute;
+  width: fit-content;
+  left: 80%;
+  top: 45%;
+  color: hsl(0, 0%, 100%);
+}
+.right-container {
+  height: 350px;
+  position: absolute;
+  top: 33%;
+  right: 25%;
+  width: 400px;
+}
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+}
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 18px;
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 10px;
+  color: hsl(279, 6%, 55%);
+
+ 
+}
+.btn {
+  width: 100%;
+  background-color:  hsl(278, 68%, 11%);
+  font-size: 18px;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.display-flex{
+  display: flex;
+}
