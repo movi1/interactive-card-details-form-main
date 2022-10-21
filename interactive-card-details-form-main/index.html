@@ -7,7 +7,8 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Interactive card details form</title>
@@ -45,64 +46,58 @@
   <!-- right-side-form -->
 
   <div class="right-container">
-    <div class="form">
+    <div id="thank-you" class="thank-you hidden text-center">
+      <img src="./images/icon-complete.svg" alt="">
+      <h3 id="thank-you-header">Thank you!</h3>
+      <p>We've added your card details</p>
+      <button class="btn" id="continue">Continue</button>
+    </div>
+
+    <div class="form" id="my-form">
       <label for="cname">Cardholder Name</label>
-      <input type="text" id="cname" name="cardname" placeholder=" e.g. Jane Appleseed">
+      <input type="text" id="cname" name="cardname" class="cardname" placeholder=" e.g. Jane Appleseed">
       <label for="ccnum">Card Number</label>
-      <input type="text" id="ccnum" name="cardnumber" placeholder="  e.g. 1234 5678 9123 0000">
+      <input type="text" id="cnumber" name="cardnumber" class="cardnumber" placeholder="  e.g. 1234 5678 9123 0000">
       <div class="row">
-        <div  flex class="display-flex">
+        <div flex class="display-flex">
           <div>
-            <label for="expdate">Exp. Date (MM/YY)</label>
+            <label for="expdate" class="expiry">Exp. Date (MM/YY)</label>
             <div class="display-flex">
-              <input type="text" id="expdate" name="expdate" placeholder="MM">
-              <input style="margin-left: 10px;" type="text" id="expyear" name="expyear" placeholder="YY">
+              <input type="text" class="expiry-month" id="expdate" name="expdate" placeholder="MM">
+              <input style="margin-left: 10px;" type="text" class="expiry-year" id="expyear" name="expyear"
+                placeholder="YY">
             </div>
           </div>
 
           <div style="margin-left: 20px;">
             <label for="cvv">CVC</label>
-            <input type="text" id="cvv" name="cvv" placeholder=" e.g. 123">
+            <input type="text" class="cvc-display" id="cvv" name="cvv" placeholder=" e.g. 123">
           </div>
 
 
         </div>
-       
 
-          <button type="button" class="btn btn-purple">Confirm</button>
-        </div>
+
+        <button class="btn" id="confirm">Confirm</button>
+
+
       </div>
     </div>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </div>
 
   <!-- Completed state start -->
-  <!-- 
-  Thank you!
-  We've added your card details
-  Continue
+
+
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    Coded by <a href="#">Movi1</a>.
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
