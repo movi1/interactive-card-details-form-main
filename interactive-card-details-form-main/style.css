@@ -33,15 +33,16 @@ body {
   max-width: 1440px;
   width: 100%;
   /* border: 1px solid #c3c3c3; */
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
 }
 #card-front {
-  position: absolute;
+  position: relative;
   width: fit-content;
-  left: 15%;
+  left: 60%;
   top: 20%;
 }
+
 #logo {
   position: absolute;
   top: 16%;
@@ -49,19 +50,22 @@ body {
   color: white;
 }
 .number {
-  bottom: 7%;
-  left: 12%;
+  /* position: relative; */
+  bottom: 10px;
+  left: 20px;
   color: white;
+  font-size: 25px;
 }
 .name {
-  position: relative;
-  text-align: start;
-  bottom: 7%;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 15px;
 }
+  
 
 .month-year {
   position: absolute;
-align-items: flex-end;
   margin-bottom: 5px;
 }
 .card-back {
@@ -84,6 +88,7 @@ align-items: flex-end;
   right: 25%;
   width: 400px;
 }
+
 label {
   display: block;
   font-size: 14px;
@@ -93,6 +98,9 @@ label {
   text-transform: uppercase;
 
 }
+
+img { max-width: 100%;}
+
 input[type=text] {
   width: 100%;
   margin-bottom: 20px;
@@ -125,9 +133,7 @@ button:hover{
 .hidden {
   display: none;
   }
-  .active {
-    background-color:  hsl(210, 40%, 2%);
-  }
+  
   p {
     font-size: 13px;
     color: hsl(217, 12%, 63%);

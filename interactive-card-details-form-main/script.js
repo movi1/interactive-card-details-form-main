@@ -14,16 +14,7 @@ const continueBtn = document.getElementById("continue");
 const form = document.getElementById("my-form");
 
 
-var btns = document.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        if (current.lenght >0) {
-            current[0].className = current[0].className.replace("active", "");
-        }
-        this.className += "active";
-    });
-};
+
 confirmButton.addEventListener("click", (e) => {
     e.preventDefault();
     thankYouSection.classList.remove("hidden");
@@ -32,15 +23,7 @@ confirmButton.addEventListener("click", (e) => {
 
   continueBtn.addEventListener("click", (e) => {
     e.preventDefault();
-   form.classList.add("hidden");
-   thankYouSection.style.display = "none";
+    thankYouSection.classList.add("hidden");
+   form.style.display = "block";
   });
 
-  function myFunction() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
